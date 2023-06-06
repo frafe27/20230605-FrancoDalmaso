@@ -1,0 +1,5 @@
+1-git init- inicializa el repositorio local
+2-git status- ve el estado de los archivos
+3-git add . - indica que se agregan todos los archivos al repositorio
+4-git commit -m "mensaje" - para confirmar los archivos que queremos subir con un mensaje especifico
+5-git push origin main - para enviar los archivos a un repositorio remoto y a la rama "main"
