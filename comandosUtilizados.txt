@@ -1,0 +1,185 @@
+Franco@ATLAS-MM2LR92T2 MINGW64 ~/Desktop/CARRERA CTD/Primer bimestre/git/20230605-FrancoDalmaso
+$ git init
+Initialized empty Git repository in C:/Users/Franco/Desktop/CARRERA CTD/Primer bimestre/git/20230605-FrancoDalmaso/.git/
+
+Franco@ATLAS-MM2LR92T2 MINGW64 ~/Desktop/CARRERA CTD/Primer bimestre/git/20230605-FrancoDalmaso (main)
+$ git remote add origin https://github.com/frafe27/20230605-FrancoDalmaso.git
+
+Franco@ATLAS-MM2LR92T2 MINGW64 ~/Desktop/CARRERA CTD/Primer bimestre/git/20230605-FrancoDalmaso (main)
+$ git branch -M main
+
+Franco@ATLAS-MM2LR92T2 MINGW64 ~/Desktop/CARRERA CTD/Primer bimestre/git/20230605-FrancoDalmaso (main)
+$
+
+Franco@ATLAS-MM2LR92T2 MINGW64 ~/Desktop/CARRERA CTD/Primer bimestre/git/20230605-FrancoDalmaso (main)
+$ touch comandos.txt main.js index.html
+
+Franco@ATLAS-MM2LR92T2 MINGW64 ~/Desktop/CARRERA CTD/Primer bimestre/git/20230605-FrancoDalmaso (main)
+$ git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        comandos.txt
+        index.html
+        main.js
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Franco@ATLAS-MM2LR92T2 MINGW64 ~/Desktop/CARRERA CTD/Primer bimestre/git/20230605-FrancoDalmaso (main)
+$ git add .
+
+Franco@ATLAS-MM2LR92T2 MINGW64 ~/Desktop/CARRERA CTD/Primer bimestre/git/20230605-FrancoDalmaso (main)
+$ git commit -m "commit 01 de FrancoDalmaso"
+[main (root-commit) 400f2c8] commit 01 de FrancoDalmaso
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 comandos.txt
+ create mode 100644 index.html
+ create mode 100644 main.js
+
+Franco@ATLAS-MM2LR92T2 MINGW64 ~/Desktop/CARRERA CTD/Primer bimestre/git/20230605-FrancoDalmaso (main)
+$ git push origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 6 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 246 bytes | 246.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/frafe27/20230605-FrancoDalmaso.git
+ * [new branch]      main -> main
+
+Franco@ATLAS-MM2LR92T2 MINGW64 ~/Desktop/CARRERA CTD/Primer bimestre/git/20230605-FrancoDalmaso (main)
+$ git branch feature01
+
+Franco@ATLAS-MM2LR92T2 MINGW64 ~/Desktop/CARRERA CTD/Primer bimestre/git/20230605-FrancoDalmaso (main)
+$ git checkout feature01
+Switched to branch 'feature01'
+
+Franco@ATLAS-MM2LR92T2 MINGW64 ~/Desktop/CARRERA CTD/Primer bimestre/git/20230605-FrancoDalmaso (feature01)
+$ mkdir Terminal
+
+Franco@ATLAS-MM2LR92T2 MINGW64 ~/Desktop/CARRERA CTD/Primer bimestre/git/20230605-FrancoDalmaso (feature01)
+$ mkdir Hardware
+
+Franco@ATLAS-MM2LR92T2 MINGW64 ~/Desktop/CARRERA CTD/Primer bimestre/git/20230605-FrancoDalmaso (feature01)
+$ cd Terminal
+
+Franco@ATLAS-MM2LR92T2 MINGW64 ~/Desktop/CARRERA CTD/Primer bimestre/git/20230605-FrancoDalmaso/Terminal (feature01)
+$ touch resumen.txt
+
+Franco@ATLAS-MM2LR92T2 MINGW64 ~/Desktop/CARRERA CTD/Primer bimestre/git/20230605-FrancoDalmaso/Terminal (feature01)
+$ cd ..
+
+Franco@ATLAS-MM2LR92T2 MINGW64 ~/Desktop/CARRERA CTD/Primer bimestre/git/20230605-FrancoDalmaso (feature01)
+$ cd Hardware
+
+Franco@ATLAS-MM2LR92T2 MINGW64 ~/Desktop/CARRERA CTD/Primer bimestre/git/20230605-FrancoDalmaso/Hardware (feature01)
+$ touch resumen.txt
+
+Franco@ATLAS-MM2LR92T2 MINGW64 ~/Desktop/CARRERA CTD/Primer bimestre/git/20230605-FrancoDalmaso/Hardware (feature01)
+$ cd ..
+
+Franco@ATLAS-MM2LR92T2 MINGW64 ~/Desktop/CARRERA CTD/Primer bimestre/git/20230605-FrancoDalmaso (feature01)
+$ git status
+On branch feature01
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Hardware/
+        Terminal/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Franco@ATLAS-MM2LR92T2 MINGW64 ~/Desktop/CARRERA CTD/Primer bimestre/git/20230605-FrancoDalmaso (feature01)
+$ git add .
+
+Franco@ATLAS-MM2LR92T2 MINGW64 ~/Desktop/CARRERA CTD/Primer bimestre/git/20230605-FrancoDalmaso (feature01)
+$ git commit -m "commit 02 de FrancoDalmaso"
+[feature01 c4caa83] commit 02 de FrancoDalmaso
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Hardware/resumen.txt
+ create mode 100644 Terminal/resumen.txt
+
+Franco@ATLAS-MM2LR92T2 MINGW64 ~/Desktop/CARRERA CTD/Primer bimestre/git/20230605-FrancoDalmaso (feature01)
+$ git push origin feature01
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 6 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 363 bytes | 363.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'feature01' on GitHub by visiting:
+remote:      https://github.com/frafe27/20230605-FrancoDalmaso/pull/new/feature01
+remote:
+To https://github.com/frafe27/20230605-FrancoDalmaso.git
+ * [new branch]      feature01 -> feature01
+
+Franco@ATLAS-MM2LR92T2 MINGW64 ~/Desktop/CARRERA CTD/Primer bimestre/git/20230605-FrancoDalmaso (feature01)
+$ git branch feature02
+
+Franco@ATLAS-MM2LR92T2 MINGW64 ~/Desktop/CARRERA CTD/Primer bimestre/git/20230605-FrancoDalmaso (feature01)
+$ git checkout feature02
+Switched to branch 'feature02'
+
+Franco@ATLAS-MM2LR92T2 MINGW64 ~/Desktop/CARRERA CTD/Primer bimestre/git/20230605-FrancoDalmaso (feature02)
+$ ls
+Hardware/  Terminal/  comandos.txt  index.html  main.js
+Franco@ATLAS-MM2LR92T2 MINGW64 ~/Desktop/CARRERA CTD/Primer bimestre/git/20230605-FrancoDalmaso (feature02)
+$
+
+Franco@ATLAS-MM2LR92T2 MINGW64 ~/Desktop/CARRERA CTD/Primer bimestre/git/20230605-FrancoDalmaso (feature02)
+$ git status
+On branch feature02
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Hardware/resumen.txt
+        modified:   Terminal/resumen.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Franco@ATLAS-MM2LR92T2 MINGW64 ~/Desktop/CARRERA CTD/Primer bimestre/git/20230605-FrancoDalmaso (feature02)
+$ git status
+On branch feature02
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Hardware/resumen.txt
+        modified:   Terminal/resumen.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Franco@ATLAS-MM2LR92T2 MINGW64 ~/Desktop/CARRERA CTD/Primer bimestre/git/20230605-FrancoDalmaso (feature02)
+$ git add .
+
+Franco@ATLAS-MM2LR92T2 MINGW64 ~/Desktop/CARRERA CTD/Primer bimestre/git/20230605-FrancoDalmaso (feature02)
+$ git commit -m "commit 03 de FrancoDalmaso"
+[feature02 bf16f29] commit 03 de FrancoDalmaso
+ 2 files changed, 8 insertions(+)
+
+Franco@ATLAS-MM2LR92T2 MINGW64 ~/Desktop/CARRERA CTD/Primer bimestre/git/20230605-FrancoDalmaso (feature02)
+$ git push origin feature02
+Enumerating objects: 11, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 6 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (6/6), 694 bytes | 694.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'feature02' on GitHub by visiting:
+remote:      https://github.com/frafe27/20230605-FrancoDalmaso/pull/new/feature02
+remote:
+To https://github.com/frafe27/20230605-FrancoDalmaso.git
+ * [new branch]      feature02 -> feature02
+
+Franco@ATLAS-MM2LR92T2 MINGW64 ~/Desktop/CARRERA CTD/Primer bimestre/git/20230605-FrancoDalmaso (feature02)
+$ git checkout main
+Switched to branch 'main'
+
+Franco@ATLAS-MM2LR92T2 MINGW64 ~/Desktop/CARRERA CTD/Primer bimestre/git/20230605-FrancoDalmaso (main)
+$ mv comandos.txt comandosUtilizados.txt
+
+Franco@ATLAS-MM2LR92T2 MINGW64 ~/Desktop/CARRERA CTD/Primer bimestre/git/20230605-FrancoDalmaso (main)
+$
